@@ -28,5 +28,8 @@ public class TipCalculator {
             }
 
         }
+        System.out.println("--------------------")
+        System.out.println("Total bill before tip: " + totalItemCost);
+        System.out.println("Total Percentage: " + tipPercent + "%");
     }
 }
