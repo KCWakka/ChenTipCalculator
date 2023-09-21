@@ -3,7 +3,7 @@ public class TipCalculator {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Welcome to the tip Calculator!");
-        System.out.print("What is your income in dollars and cents per day?: ");
+        System.out.print("What is your total income in dollars and cents per day?: ");
         double incomeNum = scan.nextDouble();
         scan.nextLine();
         System.out.print("How many people are in your group?: ");
@@ -30,8 +30,14 @@ public class TipCalculator {
 
         }
         System.out.println("--------------------");
-        System.out.println("Total bill before tip: " + totalItemCost);
+        System.out.println("Total bill before tip: $" + totalItemCost);
         System.out.println("Total Percentage: " + tipPercent + "%");
-        System.out.println("Total tip: $" + (totalItemCost / (tipPercent / 100.0)));
+        double tipCost = (totalItemCost / (tipPercent / 100.0))
+        System.out.println("Total tip: $" + tipCost);
+        double totalCost = tipCost + totalItemCost;
+        System.out.println("Total bill with tip: $" + totalCost);
+        System.out.println("Per person cost before the tip: $" + (totalItemCost / peopleNum));
+        System.out.println("Tip per person : $" + (tipCost / peopleNum));
+        System.out.println("Total cost per person: $" + (totalCost / peopleNum));
     }
 }
