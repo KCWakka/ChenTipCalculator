@@ -20,11 +20,12 @@ public class TipCalculator {
             System.out.print("Enter a cost in dollars and cents, e.g. 12.50 (put -1 to end): ");
             itemCost = scan.nextDouble();
             scan.nextLine();
-            if (itemCost = -1) {
+            if (itemCost != -1) {
                 totalItemCost += itemCost;
-                totalItemCost++;
+
             } else {
                 totalItemCost += itemCost;
+                totalItemCost++;
             }
 
         }
