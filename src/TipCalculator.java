@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class TipCalculator {
     public static void main(String[] args) {
-        Scanner scan = Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Welcome to the tip Calculator!");
         System.out.println("How many people are in your group?: ");
         int peopleNum = scan.nextInt();
