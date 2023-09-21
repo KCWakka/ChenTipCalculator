@@ -32,7 +32,7 @@ public class TipCalculator {
         System.out.println("--------------------");
         System.out.println("Total bill before tip: $" + totalItemCost);
         System.out.println("Total Percentage: " + tipPercent + "%");
-        double tipCost = (totalItemCost / (tipPercent / 100.0));
+        double tipCost = (totalItemCost * (tipPercent / 100.0));
         System.out.println("Total tip: $" + tipCost);
         double totalCost = tipCost + totalItemCost;
         System.out.println("Total bill with tip: $" + totalCost);
