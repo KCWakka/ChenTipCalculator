@@ -16,7 +16,7 @@ public class TipCalculator {
         double itemCost = scan.nextDouble();
         scan.nextLine();
         double totalItemCost = itemCost;
-        while (itemCost * 1 <= 0) {
+        while (itemCost * 1 >= 0) {
             System.out.print("Enter a cost in dollars and cents, e.g. 12.50 (put -1 to end): ");
             itemCost = scan.nextDouble();
             scan.nextLine();
