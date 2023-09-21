@@ -3,7 +3,7 @@ public class TipCalculator {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Welcome to the tip Calculator!");
-        System.out.print("What is your income in dollars and cents?: ");
+        System.out.print("What is your income in dollars and cents per day?: ");
         double incomeNum = scan.nextDouble();
         scan.nextLine();
         System.out.print("How many people are in your group?: ");
