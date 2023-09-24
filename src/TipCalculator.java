@@ -45,7 +45,7 @@ public class TipCalculator {
         System.out.println("Per person cost before the tip: $" + Math.round (totalItemCost / peopleNum * 100) / 100.0);
         System.out.println("Tip per person : $" + Math.round (tipCost / peopleNum * 100) / 100.0);
         System.out.println("Total cost per person: $" + Math.round (totalCost / peopleNum * 100) / 100.0);
-        System.out.println("You can get a meal like this approximately every" + Math.round (totalCost / incomeNum + 0.5));
+        System.out.println("You can get a meal like this approximately every " + Math.round (totalCost / incomeNum + 0.5) + "days or day");
         System.out.println("--------------------");
         System.out.println("Items ordered:");
         System.out.print(totalItemName);
