@@ -14,19 +14,17 @@ public class TipCalculator {
         System.out.print("What's the tip percentage? (0-100): ");
         int tipPercent = scan.nextInt();
         scan.nextLine();
-        System.out.print("Enter a cost in dollars and cents, e.g. 12.50 (put -1 to end): ");
-        double itemCost = scan.nextDouble();
-        scan.nextLine();
+        double itemCost = 0;
         double totalItemCost = itemCost;
 
         while (itemCost * 1 >= 0) {
             System.out.print("Enter a cost in dollars and cents, e.g. 12.50 (put -1 to end): ");
             itemCost = scan.nextDouble();
             scan.nextLine();
-            System.out.print("Enter the Item: ");
-            totalItemName.add(scan.nextLine());
             if (itemCost != -1) {
                 totalItemCost += itemCost;
+                System.out.print("Enter the Item: ");
+                totalItemName.add(scan.nextLine());
 
             } else {
                 totalItemCost += itemCost;
@@ -45,9 +43,13 @@ public class TipCalculator {
         System.out.println("Per person cost before the tip: $" + Math.round (totalItemCost / peopleNum * 100) / 100.0);
         System.out.println("Tip per person : $" + Math.round (tipCost / peopleNum * 100) / 100.0);
         System.out.println("Total cost per person: $" + Math.round (totalCost / peopleNum * 100) / 100.0);
-        System.out.println("You can get a meal like this approximately every " + Math.round (totalCost / incomeNum + 0.5) + "days or day");
+        System.out.println("You can get a meal like this approximately every " + Math.round (totalCost / incomeNum + 0.5) + " days or day");
         System.out.println("--------------------");
         System.out.println("Items ordered:");
-        System.out.print(totalItemName);
+        String item;
+        for (int i = 0; i < totalItemName.size(); i++) {
+            item = totalItemName.get(i);
+            System.out.println(item);
+        }
     }
 }
