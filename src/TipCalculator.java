@@ -1,9 +1,9 @@
 import java.util.Scanner;
-import java.util.*;
+import java.util.ArrayList;
 public class TipCalculator {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in); // to take input
-        List<String> totalItemName = new ArrayList<>(); //making a list for the extra credit
+        ArrayList<String> totalItemName = new ArrayList<>(); //making a list for the extra credit
         System.out.println("Welcome to the tip Calculator!");
         System.out.print("What is your total income in dollars and cents per day?: ");
         // line 8 is my freestyle, telling the user how often they can have this meal with tips
