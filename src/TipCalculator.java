@@ -47,7 +47,7 @@ public class TipCalculator {
         System.out.println("Total tip: $" + tipCost);
         double totalCost = tipCost + totalItemCost;
         //line 47, same reason as 44
-        System.out.println("Total bill with tip: $" + totalCost);
+        System.out.println("Total bill with tip: $" + (Math.round (totalCost * 100.0) / 100.0));
         System.out.println("Per person cost before the tip: $" + Math.round (totalItemCost / peopleNum * 100) / 100.0);
         System.out.println("Tip per person : $" + Math.round (tipCost / peopleNum * 100) / 100.0); // rounding
         System.out.println("Total cost per person: $" + Math.round (totalCost / peopleNum * 100) / 100.0); //rounding
