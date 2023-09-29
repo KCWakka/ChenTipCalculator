@@ -6,7 +6,7 @@ public class TipCalculator {
         List<String> totalItemName = new ArrayList<>(); //making a list for the extra credit
         System.out.println("Welcome to the tip Calculator!");
         System.out.print("What is your total income in dollars and cents per day?: ");
-        // line 8 is my freestlye, telling the user how often they can have this meal with tips
+        // line 8 is my freestyle, telling the user how often they can have this meal with tips
         double incomeNum = scan.nextDouble();
         scan.nextLine();
         System.out.print("How many people are in your group?: ");
